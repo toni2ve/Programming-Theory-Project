@@ -1,6 +1,6 @@
-using System.Drawing;
+using UnityEngine;
 
-public class Enemy 
+public class Enemy : MonoBehaviour
 {
     public int health { get; protected set; }
     public Color color{ get; protected set; }
