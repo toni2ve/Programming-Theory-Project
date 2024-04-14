@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private CharacterController playerController;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
+    private float playerSpeed = 3.5f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
 
@@ -32,11 +32,11 @@ public class PlayerController : MonoBehaviour
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         if (Input.GetKey(KeyCode.LeftShift)) // make player run
         {
-            playerSpeed = 6.0f;
+            playerSpeed = 7.0f;
         }
         else
         {
-            playerSpeed = 2.0f;
+            playerSpeed = 3.5f;
         }
         playerController.Move(move * Time.deltaTime * playerSpeed);
 

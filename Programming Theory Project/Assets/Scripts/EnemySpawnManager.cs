@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpawnManager : MonoBehaviour
@@ -17,10 +18,13 @@ public class EnemySpawnManager : MonoBehaviour
 
     IEnumerator SpawnEnemyCoroutine(float waitTime)
     {
-        while (!GameManager.Instance.GameOver)
+        if (GameManager.Instance != null)
         {
-            yield return new WaitForSeconds(waitTime);
-            SpawnEnemy();
+            while (!GameManager.Instance.GameOver)
+            {
+                yield return new WaitForSeconds(waitTime);
+                SpawnEnemy();
+            }
         }
     }
 
@@ -30,7 +34,12 @@ public class EnemySpawnManager : MonoBehaviour
         GameObject spawnPoint = EnemySpawnPoints[random.Next(0, EnemySpawnPoints.Length)];
         GameObject enemy = Enemies[random.Next(0, Enemies.Length)];
 
-        Instantiate(enemy, spawnPoint.transform.position, spawnPoint.transform.rotation);
+        RaycastHit hit;
+        if (Physics.Raycast(spawnPoint.transform.position, Vector3.down, out hit))
+        {
+            Vector3 spawnLocation = new Vector3(hit.point.x, hit.point.y + 1.0f, hit.point.z);
+            Instantiate(enemy, spawnLocation, hit.transform.rotation);
+        }
     }
 
     // Update is called once per frame
