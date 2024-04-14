@@ -354,6 +354,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/NormalEnemy.cs"
+"Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/StrongEnemy.cs"
 "Assets/Scripts/UIMenuHandler.cs"
 "Assets/Scripts/WeakEnemy.cs"
