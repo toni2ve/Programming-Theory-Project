@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField]
+    public bool GameOver = false;
+
     public static GameManager Instance { get; private set;}
      private void Awake()
     {

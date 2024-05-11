@@ -1,11 +1,14 @@
-using System.Drawing;
+
+using UnityEngine;
 
 public class WeakEnemy : Enemy
 {
-    public WeakEnemy()
+    void Start()
     {
         this.health = 1;
-        this.color = Color.White;
+        this.color = Color.white;
         this.damage = 1;
+
+        gameObject.GetComponent<MeshRenderer> ().material.color = this.color;
     }
 }
