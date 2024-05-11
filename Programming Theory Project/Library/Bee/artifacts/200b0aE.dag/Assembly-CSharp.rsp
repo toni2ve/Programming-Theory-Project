@@ -364,6 +364,8 @@
 "Assets/Scripts/StrongEnemy.cs"
 "Assets/Scripts/UIMenuHandler.cs"
 "Assets/Scripts/WeakEnemy.cs"
+"Assets/Scripts/Weapon.cs"
+"Assets/Scripts/WeaponUMP45.cs"
 -langversion:9.0
 
 /deterministic

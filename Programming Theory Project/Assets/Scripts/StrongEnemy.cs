@@ -4,9 +4,9 @@ public class StrongEnemy : Enemy
 {
     void Start()
     {
-        this.health = 3;
+        this.health = 100.0f;
         this.color = Color.red;
-        this.damage = 3;
+        this.damage = 3.0f;
 
         gameObject.GetComponent<MeshRenderer>().material.color = this.color;
     }

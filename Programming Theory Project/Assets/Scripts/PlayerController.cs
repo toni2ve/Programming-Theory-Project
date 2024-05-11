@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour
     private CharacterController playerController;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
+    [SerializeField]
     private float walkSpeed = 6.0f;
+    [SerializeField]
     private float runSpeed = 12.0f;
     private float playerSpeed;
     private float xRotation = 0.0f;
