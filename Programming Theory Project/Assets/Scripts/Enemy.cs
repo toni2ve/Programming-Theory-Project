@@ -23,7 +23,7 @@ public class Enemy : MonoBehaviour
         FollowPlayer();
     }
 
-    public void TakeDamage(float damageAmount)
+    public virtual void TakeDamage(float damageAmount)
     {
         Debug.Log("health" +health+ "damage taken : "+ damageAmount);
         health -= damageAmount;
