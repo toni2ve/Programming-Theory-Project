@@ -19,8 +19,8 @@ public class PlayerController : MonoBehaviour
     private float runSpeed = 12.0f;
     private float playerSpeed;
     private float xRotation = 0.0f;
-    private float jumpHeight = 1.0f;
-    private float gravityValue = -9.81f;
+    private readonly float jumpHeight = 1.0f;
+    private readonly float gravityValue = -9.81f;
 
     // Start is called before the first frame update
     void Start()
@@ -83,17 +83,11 @@ public class PlayerController : MonoBehaviour
 
         xRotation -= mouseY;
 
-        // xVelocity = Mathf.Lerp(xVelocity, rotX, mouseSensitivity * Time.deltaTime);
-        // yVelocity = Mathf.Lerp(yVelocity, rotY, mouseSensitivity * Time.deltaTime);
-
-        // if (!lockMouseMovement)
-        // {
         //RotY
         xRotation = Mathf.Clamp(xRotation, _minCameraView, _maxCameraView);
         _camera.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
 
         //RotX
         transform.Rotate(Vector3.up * mouseX);
-        // }
     }
 }

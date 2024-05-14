@@ -1,14 +1,15 @@
 
 using UnityEngine;
 
-public class WeakEnemy : Enemy
+public class WeakEnemy : Enemy  // Inheriting from the Enemy class
 {
-    void Start()
+    // Polymorphism -- implementation of abstract method
+    protected override void Start()
     {
-        this.health = 30.0f;
-        this.color = Color.white;
-        this.damage = 1.0f;
+        this.Health = 30.0f;
+        this.Color = Color.white;
+        this.Damage = 1.0f;
 
-        gameObject.GetComponent<MeshRenderer> ().material.color = this.color;
+        gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
     }
 }

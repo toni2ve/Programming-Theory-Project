@@ -8,13 +8,16 @@ public class WeaponUMP45 : Weapon
     [SerializeField]
     private ParticleSystem muzzleFlash;
     AudioSource _shootingSound;
-    void Start()
+
+    // Polymorphism -- implementation of abstract method
+    protected override void Start()
     {
-        damage = 5.0f;
-        fireRate = 15.0f;
+        Damage = 5.0f;
+        FireRate = 10.0f;
         _shootingSound = GetComponent<AudioSource>();
     }
 
+    // Polymorphism -- implementation of abstract method
     protected override void FireWeapon()
     {
         if (!muzzleFlash.isPlaying)
@@ -27,8 +30,7 @@ public class WeaponUMP45 : Weapon
             Enemy enemy = hit.transform.GetComponent<Enemy>();
             if (enemy != null)
             {
-                Debug.Log(typeof(Enemy));
-                enemy.TakeDamage(damage);
+                enemy.TakeDamage(Damage);
             }
         }
     }

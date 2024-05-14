@@ -1,13 +1,14 @@
 using UnityEngine;
 
-public class StrongEnemy : Enemy
+public class StrongEnemy : Enemy  // Inheriting from the Enemy class
 {
-    void Start()
+    // Polymorphism -- implementation of abstract method
+    protected override void Start()
     {
-        this.health = 100.0f;
-        this.color = Color.red;
-        this.damage = 3.0f;
+        this.Health = 100.0f;
+        this.Color = Color.red;
+        this.Damage = 3.0f;
 
-        gameObject.GetComponent<MeshRenderer>().material.color = this.color;
+        gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
     }
 }

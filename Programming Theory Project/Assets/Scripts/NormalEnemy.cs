@@ -2,14 +2,15 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NormalEnemy : Enemy
+public class NormalEnemy : Enemy  // Inheriting from the Enemy class
 {
-    void Start()
+    // Polymorphism -- implementation of abstract method
+    protected override void Start()
     {
-        this.health = 60.0f;
-        this.color = Color.blue;
-        this.damage = 2.0f;
+        this.Health = 60.0f;
+        this.Color = Color.blue;
+        this.Damage = 2.0f;
 
-        gameObject.GetComponent<MeshRenderer>().material.color = this.color;
+        gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
     }
 }

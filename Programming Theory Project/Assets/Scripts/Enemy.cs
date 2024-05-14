@@ -5,17 +5,43 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float health { get; set; }
-    public Color color { get; set; }
-    public float damage { get; set; }
-
-    void Start()
+    private float health;
+    private Color color;
+    private float damage;
+    public float Health
     {
-        this.health = 0.0f;
-        this.color = Color.black;
-        this.damage = 0.0f;
+        get { return health; }
+        protected set   // Encapsulation -- Only Inherited classes can set the value
+        {
+            if (value < 0)
+                health = 30.0f;
 
-        gameObject.GetComponent<MeshRenderer>().material.color = this.color;
+            health = value;
+        }
+    }
+    public Color Color
+    {
+        get { return color; }
+        protected set   // Encapsulation -- Only Inherited classes can set the value
+        {
+            color = value;
+        }
+    }
+    public float Damage
+    {
+        get { return damage; }
+        protected set   // Encapsulation -- Only Inherited classes can set the value
+        {
+            if (value < 0)
+                damage = 1.0f;
+
+            damage = value;
+        }
+    }
+
+    // Abstract method
+    protected virtual void Start()
+    {
     }
 
     void Update()
@@ -23,21 +49,24 @@ public class Enemy : MonoBehaviour
         FollowPlayer();
     }
 
-    public virtual void TakeDamage(float damageAmount)
+    public void TakeDamage(float damageAmount)
     {
-        Debug.Log("health" +health+ "damage taken : "+ damageAmount);
-        health -= damageAmount;
-        Debug.Log("new health" +health);
-        
-        if( health <= 0f){
+        Debug.Log("health" + Health + "damage taken : " + damageAmount);
+        Health -= damageAmount;
+        Debug.Log("new health" + Health);
+
+        if (Health <= 0f)
+        {
             Die();
         }
     }
-
-    void Die(){
+    // Inheritance -- This method will be inherited by all classes extending Enemy class
+    void Die()
+    {
         Destroy(gameObject);
     }
 
+    // Inheritance -- This method will be inherited by all classes extending Enemy class
     protected void FollowPlayer()
     {
         NavMeshAgent enemy = gameObject.GetComponent<NavMeshAgent>();
