@@ -358,6 +358,8 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/EnemySpawnManager.cs"
 "Assets/Scripts/GameManager.cs"
+"Assets/Scripts/HealthBar.cs"
+"Assets/Scripts/LookAtCamera.cs"
 "Assets/Scripts/NormalEnemy.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SpawnMarker.cs"

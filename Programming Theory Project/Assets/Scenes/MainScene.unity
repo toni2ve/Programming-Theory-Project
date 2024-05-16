@@ -1350,9 +1350,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Enemies:
-  - {fileID: 342531262843013504, guid: d362eae1eaea5431b92de12325a4f449, type: 3}
-  - {fileID: 620489194682697641, guid: e74cf2b3f23c24bbbb8140efd3dfe177, type: 3}
-  - {fileID: 2932542577049698695, guid: d5ff213cf52864607a67889a86e25ada, type: 3}
+  - {fileID: 876168652216747153, guid: 12e3b29d5ad0345389edad7749dd3349, type: 3}
+  - {fileID: 4630822806385118069, guid: 6478a356f8694476e97bb3992c4ceb4a, type: 3}
+  - {fileID: 7328510959671946027, guid: f85854c36285a49c4ac21719b61d10d2, type: 3}
 --- !u!4 &1282230910
 Transform:
   m_ObjectHideFlags: 0

@@ -5,18 +5,28 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    private float health;
+    private float maxHealth;
+    private float currenthHealth;
+    public HealthBar healthBar;
     private Color color;
     private float damage;
-    public float Health
+    public float MaxHealth
     {
-        get { return health; }
+        get { return maxHealth; }
         protected set   // Encapsulation -- Only Inherited classes can set the value
         {
             if (value < 0)
-                health = 30.0f;
+                maxHealth = 30.0f;
 
-            health = value;
+            maxHealth = value;
+        }
+    }
+    public float CurrentHealth
+    {
+        get { return currenthHealth; }
+        protected set   // Encapsulation -- Only Inherited classes can set the value
+        {
+            currenthHealth = value;
         }
     }
     public Color Color
@@ -51,11 +61,11 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damageAmount)
     {
-        Debug.Log("health" + Health + "damage taken : " + damageAmount);
-        Health -= damageAmount;
-        Debug.Log("new health" + Health);
+        CurrentHealth -= damageAmount;
+        
+        healthBar.UpdateHealth(currenthHealth/maxHealth);
 
-        if (Health <= 0f)
+        if (CurrentHealth <= 0f)
         {
             Die();
         }
