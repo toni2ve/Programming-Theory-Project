@@ -22,9 +22,18 @@ public class PlayerController : MonoBehaviour
     private readonly float jumpHeight = 1.0f;
     private readonly float gravityValue = -9.81f;
 
+    [SerializeField]
+    private HealthBar healthBar;
+
+    [SerializeField]
+    private float currentPlayerHealth;
+    [SerializeField]
+    private float maxPlayerHealth;
+
     // Start is called before the first frame update
     void Start()
     {
+        currentPlayerHealth = maxPlayerHealth = 1000;
         playerSpeed = walkSpeed;
         playerController = GetComponent<CharacterController>();
         _camera = Camera.main;
@@ -89,5 +98,11 @@ public class PlayerController : MonoBehaviour
 
         //RotX
         transform.Rotate(Vector3.up * mouseX);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        currentPlayerHealth -= damage;
+        healthBar.UpdateHealth(currentPlayerHealth / maxPlayerHealth);
     }
 }

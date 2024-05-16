@@ -9,7 +9,8 @@ public class NormalEnemy : Enemy  // Inheriting from the Enemy class
     {
         this.MaxHealth = 60.0f;
         this.Color = Color.blue;
-        this.Damage = 2.0f;
+        this.Damage = 50.0f;
+        this.HitRate = 2;
         this.CurrentHealth = this.MaxHealth;
 
         gameObject.GetComponent<MeshRenderer>().material.color = this.Color;

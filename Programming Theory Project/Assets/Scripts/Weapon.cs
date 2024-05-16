@@ -44,7 +44,6 @@ public class Weapon : MonoBehaviour
     {
         if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire)
         {
-            Debug.Log("Fire");
             _nextTimeToFire = Time.time + 1f / FireRate;
             FireWeapon();
         }

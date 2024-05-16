@@ -7,9 +7,11 @@ public class Enemy : MonoBehaviour
 {
     private float maxHealth;
     private float currenthHealth;
+    private float hitRate;
     public HealthBar healthBar;
     private Color color;
     private float damage;
+    protected float nextTimeToHit = 0f;
     public float MaxHealth
     {
         get { return maxHealth; }
@@ -49,6 +51,8 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public float HitRate { get => hitRate; protected set => hitRate = value; }
+
     // Abstract method
     protected virtual void Start()
     {
@@ -62,8 +66,8 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         CurrentHealth -= damageAmount;
-        
-        healthBar.UpdateHealth(currenthHealth/maxHealth);
+
+        healthBar.UpdateHealth(currenthHealth / maxHealth);
 
         if (CurrentHealth <= 0f)
         {
@@ -83,9 +87,30 @@ public class Enemy : MonoBehaviour
         GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
+            enemy.stoppingDistance = 7.0f;
             enemy.SetDestination(player.transform.position);
+            if (enemy.remainingDistance <= 3 && Time.time >= nextTimeToHit)
+            {
+                nextTimeToHit = Time.time + 1f / hitRate;
+                HitPlayer(player);
+            }
         }
     }
 
+    protected void HitPlayer(GameObject player)
+    {
+        PlayerController playerController = player.GetComponent<PlayerController>();
+        if (playerController != null)
+            playerController.TakeDamage(damage);
+    }
+    protected void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
+            if (playerController != null)
+                playerController.TakeDamage(damage);
+        }
+    }
 
 }
