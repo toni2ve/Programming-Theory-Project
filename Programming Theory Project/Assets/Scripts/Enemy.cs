@@ -89,11 +89,11 @@ public class Enemy : MonoBehaviour
         {
             enemy.stoppingDistance = 7.0f;
             enemy.SetDestination(player.transform.position);
-            if (enemy.remainingDistance <= 3 && Time.time >= nextTimeToHit)
-            {
-                nextTimeToHit = Time.time + 1f / hitRate;
-                HitPlayer(player);
-            }
+            // if (enemy.remainingDistance <= 3 && Time.time >= nextTimeToHit)
+            // {
+            //     nextTimeToHit = Time.time + 1f / hitRate;
+            //     HitPlayer(player);
+            // }
         }
     }
 

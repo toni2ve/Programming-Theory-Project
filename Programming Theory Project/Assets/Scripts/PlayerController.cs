@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -29,10 +30,18 @@ public class PlayerController : MonoBehaviour
     private float currentPlayerHealth;
     [SerializeField]
     private float maxPlayerHealth;
+    [SerializeField]
+    private TMP_Text playerName;
 
     // Start is called before the first frame update
     void Start()
     {
+        if (GameManager.Instance != null)
+        {
+            if( playerName != null ){
+                playerName.text = GameManager.Instance.playerData.PlayerName;
+            }
+        }
         currentPlayerHealth = maxPlayerHealth = 1000;
         playerSpeed = walkSpeed;
         playerController = GetComponent<CharacterController>();

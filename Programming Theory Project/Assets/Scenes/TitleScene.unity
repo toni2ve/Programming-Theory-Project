@@ -926,6 +926,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5cc55602be6b4fd28a9b68c1255b2c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameOver: 0
+  playerData:
+    PlayerName: 
+    Highscore: 
 --- !u!4 &804414098
 Transform:
   m_ObjectHideFlags: 0
@@ -1458,7 +1462,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 518641728}
         m_TargetAssemblyTypeName: UIMenuHandler, Assembly-CSharp
-        m_MethodName: StartNewGame
+        m_MethodName: CreateNewPlayer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

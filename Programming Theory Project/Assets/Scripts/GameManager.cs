@@ -8,8 +8,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public bool GameOver = false;
 
-    public static GameManager Instance { get; private set;}
-     private void Awake()
+    public PlayerData playerData;
+
+    public static GameManager Instance { get; private set; }
+    private void Awake()
     {
         // start of new code
         if (Instance != null)
@@ -18,6 +20,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         // end of new code
+        playerData = new PlayerData();
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
@@ -27,24 +30,34 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void CreateNewPlayer()
     {
-        
+        SceneManager.LoadScene(2);
     }
-
-    public void StartNewGame(){
+    public void StartNewGame(string playerName)
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.playerData.PlayerName = playerName;
+            GameManager.Instance.playerData.Highscore = "0";
+        }
         SceneManager.LoadScene(1);
     }
 
-    public void ContinueGame(){
+    public void ContinueGame()
+    {
         // To DO Get current player data from saved session
 
         // Load main game scene
         SceneManager.LoadScene(1);
     }
+    public void BackToTitle()
+    {
+        SceneManager.LoadScene(0);
+    }
 
-    public void BackToTitle(){
-        SceneManager.LoadScene(0);  
+    private void savePlayerData()
+    {
+
     }
 }
