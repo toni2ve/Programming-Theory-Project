@@ -10,7 +10,7 @@ public class StrongEnemy : Enemy  // Inheriting from the Enemy class
         this.Damage = 100.0f;
         this.HitRate = 3;
         this.CurrentHealth = this.MaxHealth;
-
-        gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
+        base.Start();
+        // gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
     }
 }

@@ -1,5 +1,6 @@
 using System.Linq.Expressions;
 using Unity.VisualScripting;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,6 +13,10 @@ public class Enemy : MonoBehaviour
     private Color color;
     private float damage;
     protected float nextTimeToHit = 0f;
+
+    NavMeshAgent enemyMeshAgent = null;
+    Animator animator = null;
+    GameObject player = null;
     public float MaxHealth
     {
         get { return maxHealth; }
@@ -56,6 +61,11 @@ public class Enemy : MonoBehaviour
     // Abstract method
     protected virtual void Start()
     {
+        enemyMeshAgent = gameObject.GetComponent<NavMeshAgent>();
+        animator = gameObject.GetComponent<Animator>();
+        player = GameObject.FindWithTag("Player");
+        animator.SetBool("isIdle", true);
+        animator.SetBool("isFollowingPlayer", false);
     }
 
     void Update()
@@ -83,12 +93,30 @@ public class Enemy : MonoBehaviour
     // Inheritance -- This method will be inherited by all classes extending Enemy class
     protected void FollowPlayer()
     {
-        NavMeshAgent enemy = gameObject.GetComponent<NavMeshAgent>();
-        GameObject player = GameObject.FindWithTag("Player");
         if (player != null)
         {
-            enemy.stoppingDistance = 7.0f;
-            enemy.SetDestination(player.transform.position);
+            enemyMeshAgent.SetDestination(player.transform.position);
+            if (!enemyMeshAgent.pathPending)
+            {
+                if (enemyMeshAgent.remainingDistance <= enemyMeshAgent.stoppingDistance)
+                {
+                    animator.SetBool("isFollowingPlayer", false);
+                    animator.SetBool("isIdle", true);
+                    enemyMeshAgent.velocity = Vector3.zero;
+                    if (!enemyMeshAgent.hasPath || enemyMeshAgent.velocity.sqrMagnitude == 0f)
+                    {
+                        Quaternion lookRotation = Quaternion.LookRotation(player.transform.position - transform.position);
+                        Vector3 rotation = lookRotation.eulerAngles;
+                        enemyMeshAgent.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+                    }
+                }
+                else
+                {
+                    animator.SetBool("isFollowingPlayer", true);
+                    animator.SetBool("isIdle", false);
+                }
+            }
+
             // if (enemy.remainingDistance <= 3 && Time.time >= nextTimeToHit)
             // {
             //     nextTimeToHit = Time.time + 1f / hitRate;

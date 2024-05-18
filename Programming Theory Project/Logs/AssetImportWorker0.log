@@ -22,7 +22,7 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50132
+51861
 Successfully changed project path to: /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project
 /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -56,12 +56,12 @@ Successfully changed project path to: /Users/tonichami/UnityProjects/Programming
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8048680640] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 1528491018 [EditorId] 1528491018 [Version] 1048832 [Id] OSXEditor(0,Tonys-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [8048680640] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 2920194212 [EditorId] 2920194212 [Version] 1048832 [Id] OSXEditor(0,Tonys-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8048680640] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 1528491018 [EditorId] 1528491018 [Version] 1048832 [Id] OSXEditor(0,Tonys-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8048680640] Host "[IP] 192.168.1.10 [Port] 0 [Flags] 2 [Guid] 2920194212 [EditorId] 2920194212 [Version] 1048832 [Id] OSXEditor(0,Tonys-MacBook-Pro.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 13 workers.
-Refreshing native plugins compatible for Editor in 1.42 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.39 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.21f1 (bf09ca542b87)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Resources/UnitySubsystems
@@ -76,18 +76,18 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56131
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000720 seconds.
+Registered in 0.000742 seconds.
 - Loaded All Assemblies, in  0.149 seconds
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.123 seconds
-Domain Reload Profiling: 272ms
+- Finished resetting the current domain, in  0.121 seconds
+Domain Reload Profiling: 270ms
 	BeginReloadAssembly (32ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
@@ -97,15 +97,15 @@ Domain Reload Profiling: 272ms
 	RebuildCommonClasses (18ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (71ms)
+	LoadAllAssembliesAndSetupDomain (70ms)
 		LoadAssemblies (32ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (70ms)
-			TypeCache.Refresh (70ms)
+			TypeCache.Refresh (69ms)
 				TypeCache.ScanAssembly (63ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (123ms)
+	FinalizeReload (122ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (93ms)
@@ -114,7 +114,7 @@ Domain Reload Profiling: 272ms
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (65ms)
+			ProcessInitializeOnLoadAttributes (66ms)
 			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
@@ -123,72 +123,8 @@ Domain Reload Profiling: 272ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-Symbol file data-0x12a268e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Assembly-CSharp.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1306a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a26be00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130700000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a272000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a27b400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130770000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1306a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a287600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a28dc00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130828000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a287600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1306a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130828000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130950000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a288600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a293a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a289e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130850000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130950000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130aa8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130850000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130990000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130c08000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130990000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a299200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a2a1000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a2ade00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12a2a0e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130ad0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130cd0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130ad0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.243 seconds
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.250 seconds
+Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -196,756 +132,26 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.273 seconds
-Domain Reload Profiling: 517ms
-	BeginReloadAssembly (50ms)
+- Finished resetting the current domain, in  0.275 seconds
+Domain Reload Profiling: 524ms
+	BeginReloadAssembly (53ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (13ms)
+		CreateAndSetChildDomain (14ms)
 	RebuildCommonClasses (19ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (16ms)
-	LoadAllAssembliesAndSetupDomain (151ms)
-		LoadAssemblies (84ms)
+	initialDomainReloadingComplete (17ms)
+	LoadAllAssembliesAndSetupDomain (154ms)
+		LoadAssemblies (85ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (88ms)
-			TypeCache.Refresh (80ms)
-				TypeCache.ScanAssembly (72ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (81ms)
+				TypeCache.ScanAssembly (74ms)
 			ScanForSourceGeneratedMonoScriptInfo (6ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (273ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (200ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (26ms)
-			ProcessInitializeOnLoadAttributes (162ms)
-			ProcessInitializeOnLoadMethodAttributes (8ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Launching external process: /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (401.0 KB). Loaded Objects now: 3645.
-Memory consumption went from 146.9 MB to 146.5 MB.
-Total: 2.308084 ms (FindLiveObjects: 0.098750 ms CreateObjectMapping: 0.028083 ms MarkObjects: 1.974750 ms  DeleteObjects: 0.206208 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 13259.629694 seconds.
-  path: Assets/Prefabs/NormalEnemy.prefab
-  artifactKey: Guid(6478a356f8694476e97bb3992c4ceb4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/NormalEnemy.prefab using Guid(6478a356f8694476e97bb3992c4ceb4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee1eb703c624c65a80a1ac61b3ca6da') in 0.062697 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 30
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x2af087000 may have been prematurely finalized
-Symbol file data-0x140040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f814600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1400a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f814600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f838400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140110000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f83ee00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f84ac00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1401b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f83ee00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140200000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140110000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1402d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f84ac00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f852200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f851400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140200000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1402d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140428000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140200000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140310000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140588000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140310000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f851400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f859200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f868000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f859a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140450000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140650000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140450000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.182 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.330 seconds
-Domain Reload Profiling: 512ms
-	BeginReloadAssembly (65ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (11ms)
-	LoadAllAssembliesAndSetupDomain (80ms)
-		LoadAssemblies (90ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (331ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (194ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (151ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3148 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (377.8 KB). Loaded Objects now: 3658.
-Memory consumption went from 151.4 MB to 151.0 MB.
-Total: 2.034208 ms (FindLiveObjects: 0.103375 ms CreateObjectMapping: 0.033666 ms MarkObjects: 1.757500 ms  DeleteObjects: 0.139375 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 629.849269 seconds.
-  path: Assets/Scenes/MainScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54c8ebba17651c242c62fdff04181f5') in 0.002129 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x2e0030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0d1400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0090000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0d3600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0dca00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0100000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0e3400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0ef200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0198000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0e3400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e01b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e02c0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0ef200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0f6800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0f4200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0310000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e02c0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0428000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0300000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0428000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0550000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0428000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0efa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de0f8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de105600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2de10b200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e05c8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e0650000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e05c8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.176 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.327 seconds
-Domain Reload Profiling: 503ms
-	BeginReloadAssembly (62ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (79ms)
-		LoadAssemblies (89ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (327ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (188ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (147ms)
-			ProcessInitializeOnLoadMethodAttributes (8ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3148 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (377.9 KB). Loaded Objects now: 3661.
-Memory consumption went from 158.1 MB to 157.7 MB.
-Total: 1.886333 ms (FindLiveObjects: 0.095959 ms CreateObjectMapping: 0.038084 ms MarkObjects: 1.616000 ms  DeleteObjects: 0.135958 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 220.944080 seconds.
-  path: Assets/Scenes/NewPlayerScene.unity
-  artifactKey: Guid(95f517e324ef54a6ca2977b92f91da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NewPlayerScene.unity using Guid(95f517e324ef54a6ca2977b92f91da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3034afc37340ba28be24f7313f8955ab') in 0.001151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 48.926004 seconds.
-  path: Assets/Scenes/NewPlayerScene.unity
-  artifactKey: Guid(95f517e324ef54a6ca2977b92f91da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NewPlayerScene.unity using Guid(95f517e324ef54a6ca2977b92f91da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '703bbdd9404616e2ae74ccdc9d4d57b6') in 0.000542 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 269.575295 seconds.
-  path: Assets/Scripts/UIMenuHandler.cs
-  artifactKey: Guid(a2e7200a3df0c47a8a85fb42a1d59fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UIMenuHandler.cs using Guid(a2e7200a3df0c47a8a85fb42a1d59fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '143ba282229f88536de9e8a18b93bf8c') in 0.000290 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.337364 seconds.
-  path: Assets/Scripts/UIMenuHandler1.cs
-  artifactKey: Guid(bb6b480b2576649aa8c15f125d989b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UIMenuHandler1.cs using Guid(bb6b480b2576649aa8c15f125d989b85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63dc7634d951fc6266559c3ed41c55fd') in 0.000206 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x1200a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bb88400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120108000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bb8a600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bb94200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120050000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1200a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bb9ac00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bba6a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120210000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bba6a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1200a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120050000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120358000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bba6a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b840c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b840c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120238000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120358000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1204b0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120238000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120398000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120610000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120398000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b840c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b848a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b855800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b848a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120610000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120630000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120610000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.173 seconds
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.315 seconds
-Domain Reload Profiling: 488ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (75ms)
-		LoadAssemblies (89ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (315ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (175ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (25ms)
-			ProcessInitializeOnLoadAttributes (137ms)
-			ProcessInitializeOnLoadMethodAttributes (8ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3148 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.2 KB). Loaded Objects now: 3664.
-Memory consumption went from 164.8 MB to 164.4 MB.
-Total: 1.993292 ms (FindLiveObjects: 0.096125 ms CreateObjectMapping: 0.033084 ms MarkObjects: 1.734583 ms  DeleteObjects: 0.129083 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 32.699993 seconds.
-  path: Assets/Scripts/UINewPlayerMenuHandler.cs
-  artifactKey: Guid(ae4f5f2323c0744bcabc2879bd2fdd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UINewPlayerMenuHandler.cs using Guid(ae4f5f2323c0744bcabc2879bd2fdd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be395ca4d9af065d5d3996a474a8b1b1') in 0.000844 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x2a0008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8013a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0068000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8013a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a801d600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a00d8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8024000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8074000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0170000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8024000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0190000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0298000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8074000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a805be00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8074000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a02e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0298000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0400000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a02d8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0400000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0528000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0400000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8074000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a808a800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8097600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a8097600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a05a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0628000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a05a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.181 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.335 seconds
-Domain Reload Profiling: 516ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (82ms)
-		LoadAssemblies (92ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (335ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (198ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3149 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (377.8 KB). Loaded Objects now: 3668.
-Memory consumption went from 171.5 MB to 171.2 MB.
-Total: 2.011583 ms (FindLiveObjects: 0.100542 ms CreateObjectMapping: 0.027125 ms MarkObjects: 1.714875 ms  DeleteObjects: 0.168584 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 3.500095 seconds.
-  path: Assets/Scripts/UINewPlayerMenuHandler.cs
-  artifactKey: Guid(ae4f5f2323c0744bcabc2879bd2fdd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/UINewPlayerMenuHandler.cs using Guid(ae4f5f2323c0744bcabc2879bd2fdd25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e39870b3f22dadbcb0da5123b1feff0') in 0.000693 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x138030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae821600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1380b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae827800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae830c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138170000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae837600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae843400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138208000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae837600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138330000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae843400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae84aa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae848c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1380f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138398000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138468000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1380f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138608000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1380f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae848c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae850a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae85fa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2ae85d800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138608000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138690000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138608000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.182 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.336 seconds
-Domain Reload Profiling: 519ms
-	BeginReloadAssembly (64ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (82ms)
-		LoadAssemblies (93ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (337ms)
+	FinalizeReload (275ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
 		SetupLoadedEditorAssemblies (199ms)
@@ -953,1098 +159,10 @@ Domain Reload Profiling: 519ms
 			InitializePlatformSupportModulesInManaged (3ms)
 			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (154ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.68 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3149 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.1 KB). Loaded Objects now: 3671.
-Memory consumption went from 178.2 MB to 177.9 MB.
-Total: 2.205584 ms (FindLiveObjects: 0.114292 ms CreateObjectMapping: 0.031541 ms MarkObjects: 1.889250 ms  DeleteObjects: 0.170042 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 234.733077 seconds.
-  path: Assets/Scripts/PlayerData.cs
-  artifactKey: Guid(c5e2067988130440f8a40469ba1f9f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerData.cs using Guid(c5e2067988130440f8a40469ba1f9f58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0d5b37be5c0ed13466ece3fff47538c') in 0.001003 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x2a1168000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a189000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a11c8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a189000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a192400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1238000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1130000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a198e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1a4c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a12d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a198e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1168000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1130000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a13f8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1a4c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1ac200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1a9c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1168000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1460000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1530000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1168000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1460000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a0008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a1478000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1aa400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1b2200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1bf000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a1bf000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a16d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a16f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2a16d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.183 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.329 seconds
-Domain Reload Profiling: 512ms
-	BeginReloadAssembly (66ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (81ms)
-		LoadAssemblies (91ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (330ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (196ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (153ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.0 KB). Loaded Objects now: 3675.
-Memory consumption went from 185.0 MB to 184.6 MB.
-Total: 1.899500 ms (FindLiveObjects: 0.108709 ms CreateObjectMapping: 0.029541 ms MarkObjects: 1.596375 ms  DeleteObjects: 0.164542 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x150008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f592200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1511b0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f592200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f5b8600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1511d8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f521000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f78ae00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150120000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f592200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151200000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1501f8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f727000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f592200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f4b3c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151200000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1501f8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150378000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151200000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150238000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150490000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150238000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f780e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f727000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f5a2400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11f3c6400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1390c0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x138030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.178 seconds
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.340 seconds
-Domain Reload Profiling: 518ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (79ms)
-		LoadAssemblies (89ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (340ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (196ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (154ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.1 KB). Loaded Objects now: 3678.
-Memory consumption went from 191.6 MB to 191.2 MB.
-Total: 2.129875 ms (FindLiveObjects: 0.085917 ms CreateObjectMapping: 0.026000 ms MarkObjects: 1.856542 ms  DeleteObjects: 0.161000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29bcf3000 may have been prematurely finalized
-Symbol file data-0x140040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb58400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1400a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb5a600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb64200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140110000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb6ac00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb86000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1401a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb6ac00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1402d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb86000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb8d600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb8c800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140338000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140408000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140338000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1405a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140350000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb8c800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fb94600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fba1400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x11fba7000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1405a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x140630000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1405a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.172 seconds
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.350 seconds
-Domain Reload Profiling: 522ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (18ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (74ms)
-		LoadAssemblies (88ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (350ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (209ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (28ms)
-			ProcessInitializeOnLoadAttributes (166ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.0 KB). Loaded Objects now: 3681.
-Memory consumption went from 198.2 MB to 197.8 MB.
-Total: 2.093750 ms (FindLiveObjects: 0.091542 ms CreateObjectMapping: 0.027083 ms MarkObjects: 1.825000 ms  DeleteObjects: 0.149667 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29971b000 may have been prematurely finalized
-Symbol file data-0x1309a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12ba88e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131288000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12ba88e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bad2200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1309a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130968000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bad2200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bade000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131390000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bade000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1313d8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1309c8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1314a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bade000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bae8a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bae8a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x130968000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1314a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131600000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1313d8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1314e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131760000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1314e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bae8a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12baf0800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bafd600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12bafd600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131798000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131618000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x131798000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.177 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.350 seconds
-Domain Reload Profiling: 527ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (79ms)
-		LoadAssemblies (94ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (350ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (209ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (167ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.2 KB). Loaded Objects now: 3684.
-Memory consumption went from 204.8 MB to 204.5 MB.
-Total: 2.289666 ms (FindLiveObjects: 0.098667 ms CreateObjectMapping: 0.031959 ms MarkObjects: 1.963667 ms  DeleteObjects: 0.194958 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 568.381093 seconds.
-  path: Assets/Scenes/NewPlayerScene.unity
-  artifactKey: Guid(95f517e324ef54a6ca2977b92f91da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NewPlayerScene.unity using Guid(95f517e324ef54a6ca2977b92f91da86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca8f87d21248fb629ed99254b5cc2ae') in 0.001699 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 13.305616 seconds.
-  path: Assets/Scenes/TitleScene.unity
-  artifactKey: Guid(1a6139e70045c49c6b25d4d3a18168c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TitleScene.unity using Guid(1a6139e70045c49c6b25d4d3a18168c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f96ff6033c0f6a508a49886109a9b7') in 0.000720 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29971b000 may have been prematurely finalized
-Symbol file data-0x121668000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb5c800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1216c8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb62a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb6be00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120050000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121738000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb72800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb7e600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1200e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb72800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121668000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121738000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120210000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb7e600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb85c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb83e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121668000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120278000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120348000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121668000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120278000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1204e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120290000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb83e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb8bc00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb98a00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcb9e600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1204e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120570000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1204e8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.173 seconds
-Refreshing native plugins compatible for Editor in 0.58 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.356 seconds
-Domain Reload Profiling: 529ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (74ms)
-		LoadAssemblies (89ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (356ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (214ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (169ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.3 KB). Loaded Objects now: 3687.
-Memory consumption went from 211.5 MB to 211.2 MB.
-Total: 2.181167 ms (FindLiveObjects: 0.109583 ms CreateObjectMapping: 0.030375 ms MarkObjects: 1.837458 ms  DeleteObjects: 0.203417 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29971b000 may have been prematurely finalized
-Symbol file data-0x148028000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b36cc00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1480c0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b36ee00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b378200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148028000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b37ec00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b38aa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1481c8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b37ec00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148210000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148030000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1482a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b38aa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b392000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b38fa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148318000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1482a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148430000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148478000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1482e0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1485a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1482e0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b38aa00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b392800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b39f600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x12b39f600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148448000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148648000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x148448000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.178 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.332 seconds
-Domain Reload Profiling: 510ms
-	BeginReloadAssembly (62ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (80ms)
-		LoadAssemblies (90ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (332ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (191ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (149ms)
-			ProcessInitializeOnLoadMethodAttributes (9ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.0 KB). Loaded Objects now: 3690.
-Memory consumption went from 218.2 MB to 217.8 MB.
-Total: 2.066917 ms (FindLiveObjects: 0.095666 ms CreateObjectMapping: 0.039667 ms MarkObjects: 1.777750 ms  DeleteObjects: 0.153542 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29971b000 may have been prematurely finalized
-Symbol file data-0x1214b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc57000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121518000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc5d200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc66600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121588000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1214b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc6d000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc78e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121620000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc6d000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1214b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x121640000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120050000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc78e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc80400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc7e600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1200a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120050000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1201b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120090000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1201b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1202e0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1201b8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc7e600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc86400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc93200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2dcc98e00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120358000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1203e0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x120358000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.174 seconds
-Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.346 seconds
-Domain Reload Profiling: 520ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (75ms)
-		LoadAssemblies (89ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (346ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (217ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (29ms)
-			ProcessInitializeOnLoadAttributes (172ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (0ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.4 KB). Loaded Objects now: 3693.
-Memory consumption went from 224.8 MB to 224.4 MB.
-Total: 2.139333 ms (FindLiveObjects: 0.113791 ms CreateObjectMapping: 0.029917 ms MarkObjects: 1.822375 ms  DeleteObjects: 0.172833 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29971b000 may have been prematurely finalized
-Symbol file data-0x150df8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f65800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150e58000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f65800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f6ec00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150ec8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150dc0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129fde200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f40c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150f60000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129fde200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150df8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150dc0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151088000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129fde200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f40c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f40c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150df8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1510f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151120000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x150df8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1510f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151100000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1510f0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f40c00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129fde200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f4ea00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x129f4ea00 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151138000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x1517d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x151138000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.176 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.322 seconds
-Domain Reload Profiling: 499ms
-	BeginReloadAssembly (62ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (20ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (78ms)
-		LoadAssemblies (88ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (11ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (322ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (186ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (2ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (27ms)
-			ProcessInitializeOnLoadAttributes (145ms)
+			BeforeProcessingInitializeOnLoad (26ms)
+			ProcessInitializeOnLoadAttributes (160ms)
 			ProcessInitializeOnLoadMethodAttributes (8ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (2ms)
@@ -2052,14 +170,15 @@ Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 2 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.21f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.0 KB). Loaded Objects now: 3696.
-Memory consumption went from 231.4 MB to 231.0 MB.
-Total: 2.144250 ms (FindLiveObjects: 0.109500 ms CreateObjectMapping: 0.035042 ms MarkObjects: 1.850791 ms  DeleteObjects: 0.148458 ms)
+Unloading 3173 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 41 unused Assets / (401.0 KB). Loaded Objects now: 3647.
+Memory consumption went from 146.9 MB to 146.5 MB.
+Total: 2.184625 ms (FindLiveObjects: 0.076708 ms CreateObjectMapping: 0.033417 ms MarkObjects: 1.913166 ms  DeleteObjects: 0.161000 ms)
 
-Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -2075,142 +194,109 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 489.321154 seconds.
+  Time since last request: 34145.975612 seconds.
+  path: Assets/Models/copzombie_l_actisdato.fbx
+  artifactKey: Guid(34e19cd385d5b4505b04768cbbef0d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/copzombie_l_actisdato.fbx using Guid(34e19cd385d5b4505b04768cbbef0d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f077715970c94d9f9ccdc03d7a76214') in 0.246292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 159
+========================================================================
+Received Import Request.
+  Time since last request: 7.550062 seconds.
   path: Assets/Scenes/MainScene.unity
   artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/MainScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf2997db0b1b0494c95c64efdf4fab00') in 0.001437 seconds
+Start importing Assets/Scenes/MainScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '183f484f71de83f092d79b9acd248df2') in 0.000804 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Thread 0x29971b000 may have been prematurely finalized
-Symbol file data-0x2e8040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a4fd800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e80a0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a4d6800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a5af600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8110000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a579200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a5d4800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e81a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a4d6800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Updater.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEngine.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8008000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e82d0000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a579200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Settings.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a4d6800 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a5af600 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8338000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8408000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8040000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8338000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e85a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8350000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a7b4400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a579200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a75f400 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x29a579200 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e85a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e8630000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0x2e85a8000 doesn't match image /Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.172 seconds
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.370 seconds
-Domain Reload Profiling: 542ms
-	BeginReloadAssembly (63ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (2ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (21ms)
-	RebuildCommonClasses (19ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (10ms)
-	LoadAllAssembliesAndSetupDomain (73ms)
-		LoadAssemblies (87ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (6ms)
-			TypeCache.Refresh (3ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (370ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (228ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (30ms)
-			ProcessInitializeOnLoadAttributes (181ms)
-			ProcessInitializeOnLoadMethodAttributes (10ms)
-			AfterProcessingInitializeOnLoad (1ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (2ms)
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3150 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (378.0 KB). Loaded Objects now: 3699.
-Memory consumption went from 238.1 MB to 237.7 MB.
-Total: 2.449791 ms (FindLiveObjects: 0.116333 ms CreateObjectMapping: 0.030667 ms MarkObjects: 2.076625 ms  DeleteObjects: 0.225750 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 708.526722 seconds.
+  path: Assets/Models/Basic Shooter Pack
+  artifactKey: Guid(c67429779caa54daf8846061858db7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack using Guid(c67429779caa54daf8846061858db7a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '656fde61db1d660a54adf8fab7ba3dde') in 0.000727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.034988 seconds.
+  path: Assets/Models/Basic Shooter Pack/firing rifle.fbx
+  artifactKey: Guid(58fdbabd315884e22b5dfe6bf1a732ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/firing rifle.fbx using Guid(58fdbabd315884e22b5dfe6bf1a732ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b5132ee479f2b9595002330f225a01') in 0.003317 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Models/Basic Shooter Pack/strafe.fbx
+  artifactKey: Guid(53d6a4e1815204a8c8d5b0ec0be87ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/strafe.fbx using Guid(53d6a4e1815204a8c8d5b0ec0be87ed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73fcac6e31b321b725f09051d891ce0f') in 0.002048 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Models/Basic Shooter Pack/strafe (2).fbx
+  artifactKey: Guid(49b33037d7d3244548cd93a1cfe891ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/strafe (2).fbx using Guid(49b33037d7d3244548cd93a1cfe891ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4900dbf5a613f2865932d5831ea0ba5e') in 0.002027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/Models/Basic Shooter Pack/run backwards.fbx
+  artifactKey: Guid(07e575ed9c2ad4727ad283183aecbcd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/run backwards.fbx using Guid(07e575ed9c2ad4727ad283183aecbcd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9410b7492eaa4a64db4931b0bb9d3470') in 0.001836 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Models/Basic Shooter Pack/strafe right.fbx
+  artifactKey: Guid(21e906994e6be43e0a21cb56aee9a7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/strafe right.fbx using Guid(21e906994e6be43e0a21cb56aee9a7d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19398e75d4ae898568e3a93a5aaf6d01') in 0.001788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000092 seconds.
+  path: Assets/Models/Basic Shooter Pack/strafe left.fbx
+  artifactKey: Guid(4d4c7732e3d2f4c88814d21a4ca32d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/strafe left.fbx using Guid(4d4c7732e3d2f4c88814d21a4ca32d78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4004462e8a05ee43dc8f53a041f356') in 0.001874 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Models/Basic Shooter Pack/reloading.fbx
+  artifactKey: Guid(ca39ecab3db9941859edd55adae6e144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/reloading.fbx using Guid(ca39ecab3db9941859edd55adae6e144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94700a1ed5a5cb463808c712d406fea5') in 0.002403 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 143
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Models/Basic Shooter Pack/Swat.fbx
+  artifactKey: Guid(49297af7c4ac645ec9c7304df9794179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Basic Shooter Pack/Swat.fbx using Guid(49297af7c4ac645ec9c7304df9794179) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebeee5fc389598ebb6645ccf2e443e6d') in 0.076773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 156
+========================================================================
+Received Import Request.
+  Time since last request: 33.515991 seconds.
+  path: Assets/Textures/Soldier_Body_normal.png
+  artifactKey: Guid(aecdbf08ac21940d98041f18afee4019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Soldier_Body_normal.png using Guid(aecdbf08ac21940d98041f18afee4019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25b9ab6cf739567cab9dc2593c1d7220') in 0.026903 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Textures/Soldier_head_normal.png
+  artifactKey: Guid(d2482d874a0e641f7b2d889c33828a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Soldier_head_normal.png using Guid(d2482d874a0e641f7b2d889c33828a9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c346995b0d7fb1f8d26b696b6b874ba1') in 0.004712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting

@@ -11,7 +11,7 @@ public class WeakEnemy : Enemy  // Inheriting from the Enemy class
         this.Damage = 10.0f;
         this.HitRate = 1;
         this.CurrentHealth = this.MaxHealth;
-
-        gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
+        base.Start();
+        // gameObject.GetComponent<MeshRenderer>().material.color = this.Color;
     }
 }
