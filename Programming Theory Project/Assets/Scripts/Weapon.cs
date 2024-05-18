@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private float fireRate;
     private float damage;
+    private float maxHitDistance;
     public float FireRate
     {
         get { return fireRate; }
@@ -29,6 +30,18 @@ public class Weapon : MonoBehaviour
                 value = 1.0f;
 
             damage = value;
+        }
+    }
+
+    public float MaxHitDistance
+    {
+        get { return maxHitDistance; }
+        protected set  // Encapsulation -- Only Inherited classes can set the value
+        {
+            if (value < 1)
+                value = 100.0f;
+
+            maxHitDistance = value;
         }
     }
 

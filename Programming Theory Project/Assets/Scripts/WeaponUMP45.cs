@@ -14,6 +14,7 @@ public class WeaponUMP45 : Weapon
     {
         Damage = 5.0f;
         FireRate = 10.0f;
+        MaxHitDistance = 200.0f;
         _shootingSound = GetComponent<AudioSource>();
     }
 
@@ -25,7 +26,7 @@ public class WeaponUMP45 : Weapon
         if (_shootingSound != null)
             _shootingSound.Play();
         RaycastHit hit;
-        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, 100.0f))
+        if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, MaxHitDistance))
         {
             Enemy enemy = hit.transform.GetComponent<Enemy>();
             if (enemy != null)
