@@ -1,3 +1,4 @@
+using System;
 using System.Linq.Expressions;
 using Unity.VisualScripting;
 using UnityEditor.Animations;
@@ -16,6 +17,10 @@ public class Enemy : MonoBehaviour
     NavMeshAgent enemyMeshAgent = null;
     Animator animator = null;
     GameObject player = null;
+    PlayerController playerController = null;
+
+    protected Boolean isDead = false;
+
     public float MaxHealth
     {
         get { return maxHealth; }
@@ -63,13 +68,15 @@ public class Enemy : MonoBehaviour
         enemyMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindWithTag("Player");
+        playerController = player.GetComponent<PlayerController>();
         animator.SetBool("isIdle", true);
         animator.SetBool("isFollowingPlayer", false);
     }
 
     void Update()
     {
-        FollowPlayer();
+        if (!isDead)
+            FollowPlayer();
     }
 
     public void TakeDamage(float damageAmount)
@@ -83,16 +90,6 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
-    // Inheritance -- This method will be inherited by all classes extending Enemy class
-    void Die()
-    {
-        if(GameManager.Instance != null){
-            GameManager.Instance.currentPlayerData.Highscore += ScorePoint;
-            GameManager.Instance.UpdatePlayerHighscore();
-        }
-        Destroy(gameObject);
-    }
-
     // Inheritance -- This method will be inherited by all classes extending Enemy class
     protected void FollowPlayer()
     {
@@ -112,11 +109,13 @@ public class Enemy : MonoBehaviour
                         Vector3 rotation = lookRotation.eulerAngles;
                         enemyMeshAgent.transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
                     }
+                    HitPlayer();
                 }
                 else
                 {
                     animator.SetBool("isFollowingPlayer", true);
                     animator.SetBool("isIdle", false);
+                    animator.SetBool("Attack", false);
                 }
             }
 
@@ -128,15 +127,29 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    protected void HitPlayer(GameObject player)
+  // Inheritance -- This method will be inherited by all classes extending Enemy class
+    void Die()
     {
-        PlayerController playerController = player.GetComponent<PlayerController>();
-        if (playerController != null)
-            playerController.TakeDamage(damage);
+        isDead = true;
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.currentPlayerData.Highscore += ScorePoint;
+            GameManager.Instance.UpdatePlayerHighscore();
+        }
+        enemyMeshAgent.SetDestination(transform.position);
+        enemyMeshAgent.velocity = Vector3.zero;
+        animator.SetBool("Dead", true);
+        Destroy(gameObject, 3.0f);
+    }
+    protected void HitPlayer()
+    {
+        animator.SetBool("Attack", true);
+        // if (playerController != null)
+        //     playerController.TakeDamage(damage);
     }
     protected void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.CompareTag("Player"))
         {
             PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
             if (playerController != null)

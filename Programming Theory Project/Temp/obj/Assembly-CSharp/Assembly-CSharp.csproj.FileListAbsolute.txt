@@ -1,0 +1,9 @@
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/bin/Debug/Assembly-CSharp.deps.json
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/bin/Debug/Assembly-CSharp.pdb
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/obj/Assembly-CSharp/Assembly-CSharp.csproj.AssemblyReference.cache
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/obj/Assembly-CSharp/Assembly-CSharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/obj/Assembly-CSharp/Assembly-CSharp.csproj.CoreCompileInputs.cache
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/obj/Assembly-CSharp/Assembly-CSharp.sourcelink.json
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/obj/Assembly-CSharp/Assembly-CSharp.dll
+/Users/tonichami/UnityProjects/Programming-Theory-Project/Programming Theory Project/Temp/obj/Assembly-CSharp/Assembly-CSharp.pdb
