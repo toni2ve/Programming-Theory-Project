@@ -1,5 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,7 +11,10 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public bool GameOver = false;
 
-    public PlayerData playerData;
+    public PlayerData currentPlayerData;
+    public PlayerData latestHighScorePlayerData;
+
+    GameObject scoreObject = null;
 
     public static GameManager Instance { get; private set; }
     private void Awake()
@@ -20,16 +26,29 @@ public class GameManager : MonoBehaviour
             return;
         }
         // end of new code
-        playerData = new PlayerData();
+        currentPlayerData = new PlayerData();
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
     // Start is called before the first frame update
     void Start()
     {
+        latestHighScorePlayerData = new PlayerData();
+        loadHighscore();
         SceneManager.LoadScene(0);
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
+    public void UpdatePlayerHighscore()
+    {
+        if (scoreObject == null)
+        {
+            scoreObject = GameObject.Find("ScoreValue");
+        }
+
+        TMP_Text highscoreText = scoreObject.GetComponent<TMP_Text>();
+        highscoreText.SetText("" + currentPlayerData.Highscore);
+    }
     public void CreateNewPlayer()
     {
         SceneManager.LoadScene(2);
@@ -38,26 +57,51 @@ public class GameManager : MonoBehaviour
     {
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.playerData.PlayerName = playerName;
-            GameManager.Instance.playerData.Highscore = "0";
+            GameManager.Instance.currentPlayerData.PlayerName = playerName;
+            GameManager.Instance.currentPlayerData.Highscore = 0;
         }
         SceneManager.LoadScene(1);
     }
-
-    public void ContinueGame()
+    public void ViewHighscore()
     {
-        // To DO Get current player data from saved session
-
-        // Load main game scene
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
     public void BackToTitle()
     {
         SceneManager.LoadScene(0);
     }
-
-    private void savePlayerData()
+    public void SaveHighscore()
     {
+        if (currentPlayerData.Highscore > latestHighScorePlayerData.Highscore)
+        {
+            PlayerData data = new PlayerData();
+            data.PlayerName = currentPlayerData != null ? currentPlayerData.PlayerName : "None";
+            data.Highscore = currentPlayerData.Highscore;
 
+            string json = JsonUtility.ToJson(data);
+
+            File.WriteAllText(Application.persistentDataPath + "/highscore.json", json);
+        }
+    }
+
+    private void loadHighscore()
+    {
+        string path = Application.persistentDataPath + "/highscore.json";
+        if (File.Exists(path))
+        {
+            string json = File.ReadAllText(path);
+            PlayerData data = JsonUtility.FromJson<PlayerData>(json);
+
+            if (data != null)
+            {
+                latestHighScorePlayerData.PlayerName = data.PlayerName;
+                latestHighScorePlayerData.Highscore = data.Highscore;
+            }
+        }
+        else
+        {
+            latestHighScorePlayerData.PlayerName = "None";
+            latestHighScorePlayerData.Highscore = 0;
+        }
     }
 }

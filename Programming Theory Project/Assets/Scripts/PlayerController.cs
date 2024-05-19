@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -38,8 +39,9 @@ public class PlayerController : MonoBehaviour
     {
         if (GameManager.Instance != null)
         {
-            if( playerName != null ){
-                playerName.text = GameManager.Instance.playerData.PlayerName;
+            if (playerName != null)
+            {
+                playerName.text = GameManager.Instance.currentPlayerData.PlayerName;
             }
         }
         currentPlayerHealth = maxPlayerHealth = 1000;
@@ -113,5 +115,25 @@ public class PlayerController : MonoBehaviour
     {
         currentPlayerHealth -= damage;
         healthBar.UpdateHealth(currentPlayerHealth / maxPlayerHealth);
+        if (currentPlayerHealth <= 0)
+        {
+            GameOver();
+        }
+    }
+
+    private void GameOver()
+    {
+        if (GameManager.Instance != null){
+            GameManager.Instance.GameOver = true;
+
+            GameManager.Instance.SaveHighscore();
+        }
+        SceneManager.LoadScene(4);
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+
+        // GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        // foreach (GameObject enemy in enemies)
+        //     Destroy(enemy);
     }
 }

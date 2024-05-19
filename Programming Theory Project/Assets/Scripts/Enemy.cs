@@ -10,10 +10,9 @@ public class Enemy : MonoBehaviour
     private float currenthHealth;
     private float hitRate;
     public HealthBar healthBar;
-    private Color color;
     private float damage;
     protected float nextTimeToHit = 0f;
-
+    protected int scorePoint;
     NavMeshAgent enemyMeshAgent = null;
     Animator animator = null;
     GameObject player = null;
@@ -36,12 +35,12 @@ public class Enemy : MonoBehaviour
             currenthHealth = value;
         }
     }
-    public Color Color
+    public int ScorePoint
     {
-        get { return color; }
+        get { return scorePoint; }
         protected set   // Encapsulation -- Only Inherited classes can set the value
         {
-            color = value;
+            scorePoint = value;
         }
     }
     public float Damage
@@ -87,6 +86,10 @@ public class Enemy : MonoBehaviour
     // Inheritance -- This method will be inherited by all classes extending Enemy class
     void Die()
     {
+        if(GameManager.Instance != null){
+            GameManager.Instance.currentPlayerData.Highscore += ScorePoint;
+            GameManager.Instance.UpdatePlayerHighscore();
+        }
         Destroy(gameObject);
     }
 

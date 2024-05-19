@@ -14,12 +14,11 @@ public class UIMenuHandler : MonoBehaviour
             GameManager.Instance.CreateNewPlayer();
         }
     }
-
-    public void ContinueGame()
+     public void ViewHighscore()
     {
         if (GameManager.Instance != null)
         {
-            GameManager.Instance.ContinueGame();
+            GameManager.Instance.ViewHighscore();
         }
     }
 
