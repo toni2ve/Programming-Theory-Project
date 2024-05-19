@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -123,7 +124,8 @@ public class PlayerController : MonoBehaviour
 
     private void GameOver()
     {
-        if (GameManager.Instance != null){
+        if (GameManager.Instance != null)
+        {
             GameManager.Instance.GameOver = true;
 
             GameManager.Instance.SaveHighscore();
@@ -135,5 +137,23 @@ public class PlayerController : MonoBehaviour
         // GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         // foreach (GameObject enemy in enemies)
         //     Destroy(enemy);
+    }
+    // void OnCollisionEnter(Collision collision)
+    // {
+    //     Debug.Log("" + collision.gameObject.name);
+    //     if (collision.gameObject.CompareTag("Enemy"))
+    //     {
+    //         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+    //         TakeDamage(enemy.Damage);
+    //     }
+    // }
+    protected void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("" + other.gameObject.name);
+        if (other.gameObject.CompareTag("EnemyPart"))
+        {
+            Enemy enemy = other.gameObject.GetComponentInParent<Enemy>();
+            TakeDamage(enemy.Damage);
+        }
     }
 }

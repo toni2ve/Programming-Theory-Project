@@ -147,14 +147,4 @@ public class Enemy : MonoBehaviour
         // if (playerController != null)
         //     playerController.TakeDamage(damage);
     }
-    protected void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.CompareTag("Player"))
-        {
-            PlayerController playerController = other.gameObject.GetComponent<PlayerController>();
-            if (playerController != null)
-                playerController.TakeDamage(damage);
-        }
-    }
-
 }
