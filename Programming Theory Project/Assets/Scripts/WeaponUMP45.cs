@@ -28,10 +28,16 @@ public class WeaponUMP45 : Weapon
         RaycastHit hit;
         if (Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, MaxHitDistance))
         {
-            Enemy enemy = hit.transform.GetComponent<Enemy>();
-            if (enemy != null)
+            if (hit.transform.TryGetComponent<Enemy>(out var enemy))
             {
                 enemy.TakeDamage(Damage);
+            }
+            else if (hit.transform.CompareTag("EnemyPart"))
+            {
+                Enemy enemy1 = hit.transform.GetComponentInParent<Enemy>();
+                if(enemy1 != null){
+                    enemy.TakeDamage(Damage);
+                }
             }
         }
     }

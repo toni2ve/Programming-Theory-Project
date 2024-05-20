@@ -118,12 +118,6 @@ public class Enemy : MonoBehaviour
                     animator.SetBool("Attack", false);
                 }
             }
-
-            // if (enemy.remainingDistance <= 3 && Time.time >= nextTimeToHit)
-            // {
-            //     nextTimeToHit = Time.time + 1f / hitRate;
-            //     HitPlayer(player);
-            // }
         }
     }
 
@@ -139,6 +133,10 @@ public class Enemy : MonoBehaviour
         enemyMeshAgent.SetDestination(transform.position);
         enemyMeshAgent.velocity = Vector3.zero;
         animator.SetBool("Dead", true);
+        BoxCollider[] colliders = gameObject.GetComponentsInChildren<BoxCollider>();
+        foreach(BoxCollider collider in colliders){
+            collider.enabled = false;
+        }
         Destroy(gameObject, 3.0f);
     }
     protected void HitPlayer()

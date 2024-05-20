@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
     // }
     protected void OnTriggerEnter(Collider other)
     {
-        Debug.Log("" + other.gameObject.name);
+        Debug.Log("" + other.gameObject.tag);
         if (other.gameObject.CompareTag("EnemyPart"))
         {
             Enemy enemy = other.gameObject.GetComponentInParent<Enemy>();
