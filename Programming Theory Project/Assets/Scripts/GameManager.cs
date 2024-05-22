@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
 
     GameObject scoreObject = null;
 
+    public TMP_Text ClipAmmo;
+    public TMP_Text ExtraAmmo;
+
     public static GameManager Instance { get; private set; }
     private void Awake()
     {
@@ -103,5 +106,17 @@ public class GameManager : MonoBehaviour
             latestHighScorePlayerData.PlayerName = "None";
             latestHighScorePlayerData.Highscore = 0;
         }
+    }
+
+    public void UpdateClipAmmoDisplay(int ammo)
+    {
+        if (ClipAmmo != null)
+            ClipAmmo.text = "" + ammo;
+    }
+
+    public void UpdateExtraAmmoDisplay(int ammo)
+    {
+        if (ExtraAmmo != null)
+            ExtraAmmo.text = "" + ammo;
     }
 }

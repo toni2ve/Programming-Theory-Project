@@ -34,6 +34,10 @@ public class PlayerController : MonoBehaviour
     private float maxPlayerHealth;
     [SerializeField]
     private TMP_Text playerName;
+    public Weapon weapon;
+
+    public TMP_Text clipAmmo;
+    public TMP_Text extraAmmo;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +48,12 @@ public class PlayerController : MonoBehaviour
             {
                 playerName.text = GameManager.Instance.currentPlayerData.PlayerName;
             }
+
+            if (clipAmmo != null)
+                GameManager.Instance.ClipAmmo = clipAmmo;
+
+            if (extraAmmo != null)
+                GameManager.Instance.ExtraAmmo = extraAmmo;
         }
         currentPlayerHealth = maxPlayerHealth = 1000;
         playerSpeed = walkSpeed;
@@ -51,6 +61,8 @@ public class PlayerController : MonoBehaviour
         _camera = Camera.main;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        UpdateClipAmmo(weapon.ClipAmmo);
+        UpdateExtraAmmo(weapon.ExtraAmmo);
     }
 
     // Update is called once per frame
@@ -61,6 +73,11 @@ public class PlayerController : MonoBehaviour
         MovePlayer();
         JumpPlayer();
         PlayerRotation();
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ReloadWeapon(weapon);
+        }
 
     }
 
@@ -77,10 +94,6 @@ public class PlayerController : MonoBehaviour
         }
         playerController.Move(move * Time.deltaTime * playerSpeed);
 
-        // if (move != Vector3.zero)
-        // {
-        //     gameObject.transform.forward = move;
-        // }
     }
     private void JumpPlayer()
     {
@@ -133,27 +146,28 @@ public class PlayerController : MonoBehaviour
         SceneManager.LoadScene(4);
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = true;
-
-        // GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        // foreach (GameObject enemy in enemies)
-        //     Destroy(enemy);
     }
-    // void OnCollisionEnter(Collision collision)
-    // {
-    //     Debug.Log("" + collision.gameObject.name);
-    //     if (collision.gameObject.CompareTag("Enemy"))
-    //     {
-    //         Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-    //         TakeDamage(enemy.Damage);
-    //     }
-    // }
     protected void OnTriggerEnter(Collider other)
     {
-        Debug.Log("" + other.gameObject.tag);
         if (other.gameObject.CompareTag("EnemyPart"))
         {
             Enemy enemy = other.gameObject.GetComponentInParent<Enemy>();
             TakeDamage(enemy.Damage);
         }
+    }
+
+    private void UpdateClipAmmo(int value)
+    {
+        GameManager.Instance.UpdateClipAmmoDisplay(value);
+
+    }
+
+    private void UpdateExtraAmmo(int value)
+    {
+        GameManager.Instance.UpdateExtraAmmoDisplay(value);
+    }
+    private void ReloadWeapon(Weapon weapon)
+    {
+        weapon.ReloadWeapon();
     }
 }
