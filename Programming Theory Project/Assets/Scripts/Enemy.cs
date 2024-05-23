@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         if (!isDead)
-            FollowPlayer();
+            FollowPlayer(); //Abstraction
     }
 
     public void TakeDamage(float damageAmount)
@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
 
         if (CurrentHealth <= 0f)
         {
-            Die();
+            Die(); //Abstraction
         }
     }
     // Inheritance -- This method will be inherited by all classes extending Enemy class
@@ -121,7 +121,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-  // Inheritance -- This method will be inherited by all classes extending Enemy class
+    // Inheritance -- This method will be inherited by all classes extending Enemy class
     void Die()
     {
         isDead = true;
@@ -134,7 +134,8 @@ public class Enemy : MonoBehaviour
         enemyMeshAgent.velocity = Vector3.zero;
         animator.SetBool("Dead", true);
         BoxCollider[] colliders = gameObject.GetComponentsInChildren<BoxCollider>();
-        foreach(BoxCollider collider in colliders){
+        foreach (BoxCollider collider in colliders)
+        {
             collider.enabled = false;
         }
         Destroy(gameObject, 3.0f);
@@ -142,7 +143,5 @@ public class Enemy : MonoBehaviour
     protected void HitPlayer()
     {
         animator.SetBool("Attack", true);
-        // if (playerController != null)
-        //     playerController.TakeDamage(damage);
     }
 }

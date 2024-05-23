@@ -13,8 +13,8 @@ public class Weapon : MonoBehaviour
     private float maxHitDistance;
     private int clipSize;
     private int clipAmmo;
-    private int extraAmmo;
-    private int maxAmmo;
+    public int extraAmmo;
+    public int maxAmmo = 400;
     private bool reloading;
 
     protected float _nextTimeToFire = 0f;
@@ -117,10 +117,12 @@ public class Weapon : MonoBehaviour
     public int ExtraAmmo
     {
         get { return extraAmmo; }
-        protected set
+        set
         {
             if (value < 0)
                 value = 0;
+            if (value > MaxAmmo)
+                value = MaxAmmo;
             extraAmmo = value;
         }
     }
@@ -132,5 +134,9 @@ public class Weapon : MonoBehaviour
         {
             reloading = value;
         }
+    }
+    public bool AmmoFull
+    {
+        get { return extraAmmo == maxAmmo; }
     }
 }

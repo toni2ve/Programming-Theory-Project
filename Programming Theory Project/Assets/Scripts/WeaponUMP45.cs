@@ -22,7 +22,6 @@ public class WeaponUMP45 : Weapon
         this.ClipSize = 30;
         this.ClipAmmo = this.ClipSize;
         this.ExtraAmmo = 180;
-        this.MaxAmmo = 400;
         this.Reloading = false;
     }
 

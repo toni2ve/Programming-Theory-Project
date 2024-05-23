@@ -11,7 +11,6 @@ public class EnemySpawnManager : MonoBehaviour
     void Start()
     {
         EnemySpawnPoints = GameObject.FindGameObjectsWithTag("SpawnPoint");
-        // Enemies = GameObject.FindGameObjectsWithTag("Enemy");
 
         StartCoroutine(SpawnEnemyCoroutine(5.0f));
     }

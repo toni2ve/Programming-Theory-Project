@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class StrongEnemy : Enemy  // Inheriting from the Enemy class
 {
-    // Polymorphism -- implementation of abstract method
+    // Polymorphism -- implementation of virtual method
     protected override void Start()
     {
         this.MaxHealth = 100.0f;
