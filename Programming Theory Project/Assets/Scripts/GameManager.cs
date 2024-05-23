@@ -60,6 +60,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameManager.Instance != null)
         {
+            GameOver = false;
             GameManager.Instance.currentPlayerData.PlayerName = playerName;
             GameManager.Instance.currentPlayerData.Highscore = 0;
         }

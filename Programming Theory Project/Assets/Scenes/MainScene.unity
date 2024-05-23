@@ -255,7 +255,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: caa203191845c4d50b235954c355ab9e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78f6250f776414c2eae68de3d2314d94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1085,7 +1085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 30
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2213,7 +2213,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b8db5c5a3634543b42a456600e92ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Enemies: []
+  Enemies:
+  - {fileID: 5846708973236404527, guid: 0e8cca7dfeb634339a92b765e407aacc, type: 3}
+  - {fileID: 243149187442376452, guid: 756f519ae31bb469a957f4d2037e36bd, type: 3}
+  - {fileID: 1056161224981891580, guid: 9298f9bdbf31f4ee2b82dd35e4e03259, type: 3}
 --- !u!4 &1282230910
 Transform:
   m_ObjectHideFlags: 0
