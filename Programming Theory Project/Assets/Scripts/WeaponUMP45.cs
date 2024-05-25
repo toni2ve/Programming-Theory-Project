@@ -28,7 +28,7 @@ public class WeaponUMP45 : Weapon
     // Polymorphism -- implementation of abstract method
     protected override void FireWeapon()
     {
-        if (this.ClipAmmo > 0)
+        if (this.ClipAmmo > 0 && !this.Reloading)
         {
             if (!muzzleFlash.isPlaying)
                 muzzleFlash.Play();
@@ -76,9 +76,8 @@ public class WeaponUMP45 : Weapon
         if (_reloadingSound != null)
         {
             _reloadingSound.Play();
-            yield return new WaitUntil(() => _reloadingSound.time >= _reloadingSound.clip.length);
+            yield return new WaitForSeconds(_reloadingSound.clip.length);
         }
-
         int ammoRequired = this.ClipSize - this.ClipAmmo;
 
         if (this.ExtraAmmo >= ammoRequired)

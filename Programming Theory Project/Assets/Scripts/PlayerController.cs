@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private TMP_Text playerName;
     public Weapon weapon;
-
     public TMP_Text clipAmmo;
     public TMP_Text extraAmmo;
 
@@ -68,17 +67,20 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        groundedPlayer = playerController.isGrounded;
-
-        MovePlayer();
-        JumpPlayer();
-        PlayerRotation();
-
-        if (Input.GetKeyDown(KeyCode.R))
+        if (!GameManager.Instance.isGamePaused)
         {
-            ReloadWeapon(weapon);
-        }
+            groundedPlayer = playerController.isGrounded;
 
+            MovePlayer();
+            JumpPlayer();
+            PlayerRotation();
+
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Debug.Log("R key pressed");
+                ReloadWeapon(weapon);
+            }
+        }
     }
 
     private void MovePlayer()

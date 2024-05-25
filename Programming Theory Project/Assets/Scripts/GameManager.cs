@@ -10,11 +10,14 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField]
     public bool GameOver = false;
+    public bool isGamePaused = false;
 
     public PlayerData currentPlayerData;
     public PlayerData latestHighScorePlayerData;
 
     GameObject scoreObject = null;
+
+    private float previousTimeScale = 0.0f;
 
     public TMP_Text ClipAmmo;
     public TMP_Text ExtraAmmo;
@@ -42,6 +45,30 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Confined;
     }
 
+    public void TogglePause(GameObject pausePanel)
+    {
+        if (Time.timeScale > 0)
+        {
+            previousTimeScale = Time.timeScale;
+            Time.timeScale = 0;
+            AudioListener.pause = true;
+            pausePanel.SetActive(true);
+            isGamePaused = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+        }
+        else if (Time.timeScale == 0)
+        {
+            Time.timeScale = previousTimeScale;
+            AudioListener.pause = false;
+            pausePanel.SetActive(false);
+            isGamePaused = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
+    }
+
     public void UpdatePlayerHighscore()
     {
         if (scoreObject == null)
@@ -61,6 +88,7 @@ public class GameManager : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameOver = false;
+            isGamePaused = false;
             GameManager.Instance.currentPlayerData.PlayerName = playerName;
             GameManager.Instance.currentPlayerData.Highscore = 0;
         }
@@ -72,6 +100,8 @@ public class GameManager : MonoBehaviour
     }
     public void BackToTitle()
     {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         SceneManager.LoadScene(0);
     }
     public void SaveHighscore()

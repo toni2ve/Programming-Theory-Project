@@ -27,10 +27,13 @@ public class Weapon : MonoBehaviour
     // Update is called once per frame
     protected void Update()
     {
-        if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire)
+        if (!GameManager.Instance.isGamePaused)
         {
-            _nextTimeToFire = Time.time + 1f / FireRate;
-            FireWeapon();
+            if (Input.GetButton("Fire1") && Time.time >= _nextTimeToFire)
+            {
+                _nextTimeToFire = Time.time + 1f / FireRate;
+                FireWeapon();
+            }
         }
     }
     // Abstract method

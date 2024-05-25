@@ -367,6 +367,7 @@
 "Assets/Scripts/SpawnMarker.cs"
 "Assets/Scripts/StrongEnemy.cs"
 "Assets/Scripts/UIGameOverMenuHandler.cs"
+"Assets/Scripts/UIGamePausedMenuHandler.cs"
 "Assets/Scripts/UIHighscoreMenuHandler.cs"
 "Assets/Scripts/UIMenuHandler.cs"
 "Assets/Scripts/UINewPlayerMenuHandler.cs"

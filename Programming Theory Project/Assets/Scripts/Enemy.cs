@@ -17,7 +17,6 @@ public class Enemy : MonoBehaviour
     NavMeshAgent enemyMeshAgent = null;
     Animator animator = null;
     GameObject player = null;
-    PlayerController playerController = null;
 
     protected Boolean isDead = false;
 
@@ -68,14 +67,13 @@ public class Enemy : MonoBehaviour
         enemyMeshAgent = gameObject.GetComponent<NavMeshAgent>();
         animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindWithTag("Player");
-        playerController = player.GetComponent<PlayerController>();
         animator.SetBool("isIdle", true);
         animator.SetBool("isFollowingPlayer", false);
     }
 
     void Update()
     {
-        if (!isDead)
+        if (!isDead || !GameManager.Instance.isGamePaused)
             FollowPlayer(); //Abstraction
     }
 

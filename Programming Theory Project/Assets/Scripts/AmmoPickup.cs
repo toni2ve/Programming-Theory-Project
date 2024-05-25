@@ -18,31 +18,34 @@ public class AmmoPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (availableAmmoCount == 0 && !isCoroutineRunning)
+        if (!GameManager.Instance.isGamePaused)
         {
-            isCoroutineRunning = true;
-            StartCoroutine(FillAmmoBox());
-        }
-        Vector3 distanceToPlayer = player.position - transform.position;
-        if (distanceToPlayer.magnitude <= pickupRange)
-        {
-            if (availableAmmoCount <= 0)
-                AmmoTopText.GetComponent<TMP_Text>().text = "Empty";
-            else
-                AmmoTopText.GetComponent<TMP_Text>().text = "Press \"E\" to pickup ammo.";
-                
-            AmmoTopText.SetActive(true);
-            Weapon weapon = player.GetComponentInChildren<Weapon>();
-
-            // show press E to get Ammo
-            if (Input.GetKeyDown(KeyCode.E) && weapon != null && !weapon.AmmoFull && availableAmmoCount > 0)
+            if (availableAmmoCount == 0 && !isCoroutineRunning)
             {
-                PickUpAmmo(weapon);
+                isCoroutineRunning = true;
+                StartCoroutine(FillAmmoBox());
             }
-        }
-        else
-        {
-            AmmoTopText.SetActive(false);
+            Vector3 distanceToPlayer = player.position - transform.position;
+            if (distanceToPlayer.magnitude <= pickupRange)
+            {
+                if (availableAmmoCount <= 0)
+                    AmmoTopText.GetComponent<TMP_Text>().text = "Empty";
+                else
+                    AmmoTopText.GetComponent<TMP_Text>().text = "Press \"E\" to pickup ammo.";
+
+                AmmoTopText.SetActive(true);
+                Weapon weapon = player.GetComponentInChildren<Weapon>();
+
+                // show press E to get Ammo
+                if (Input.GetKeyDown(KeyCode.E) && weapon != null && !weapon.AmmoFull && availableAmmoCount > 0)
+                {
+                    PickUpAmmo(weapon);
+                }
+            }
+            else
+            {
+                AmmoTopText.SetActive(false);
+            }
         }
     }
 
