@@ -69,7 +69,7 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        if (!isDead || !GameManager.Instance.isGamePaused)
+        if (!isDead && !GameManager.Instance.isGamePaused)
             FollowPlayer(); //Abstraction
     }
 
