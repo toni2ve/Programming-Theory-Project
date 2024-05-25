@@ -77,7 +77,6 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.R))
             {
-                Debug.Log("R key pressed");
                 ReloadWeapon(weapon);
             }
         }
