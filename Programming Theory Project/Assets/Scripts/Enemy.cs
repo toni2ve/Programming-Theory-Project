@@ -61,7 +61,6 @@ public class Enemy : MonoBehaviour
 
     public float HitRate { get => hitRate; protected set => hitRate = value; }
 
-    // Abstract method
     protected virtual void Start()
     {
         enemyMeshAgent = gameObject.GetComponent<NavMeshAgent>();

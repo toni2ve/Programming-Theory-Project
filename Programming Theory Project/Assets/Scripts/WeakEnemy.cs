@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class WeakEnemy : Enemy  // Inheriting from the Enemy class
 {
-    // Polymorphism -- implementation of virtual method
+    // implementation of virtual method
     protected override void Start()
     {
         this.MaxHealth = 30.0f;

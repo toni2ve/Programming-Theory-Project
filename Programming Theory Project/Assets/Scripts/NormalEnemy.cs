@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NormalEnemy : Enemy  // Inheriting from the Enemy class
 {
-    // Polymorphism -- implementation virtual method
+    // implementation virtual method
     protected override void Start()
     {
         this.MaxHealth = 60.0f;

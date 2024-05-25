@@ -19,7 +19,6 @@ public class Weapon : MonoBehaviour
 
     protected float _nextTimeToFire = 0f;
 
-    // Abstract Start method
     protected virtual void Start()
     {
     }
@@ -36,11 +35,9 @@ public class Weapon : MonoBehaviour
             }
         }
     }
-    // Abstract method
     protected virtual void FireWeapon()
     {
     }
-    // Abstract method
     public virtual void ReloadWeapon()
     {
     }

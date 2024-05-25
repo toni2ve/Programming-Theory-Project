@@ -153,6 +153,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("EnemyPart"))
         {
+            // Polymorphism --- the damage value will be retrieve based on the enemy type returned.
+            // it can be WeakEnemy, NormalEnemy or StrongEnmy, thus method Damage of that 
+            // specific enemy type class will be called.
             Enemy enemy = other.gameObject.GetComponentInParent<Enemy>();
             TakeDamage(enemy.Damage);
         }
